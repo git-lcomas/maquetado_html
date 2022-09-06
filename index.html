@@ -421,7 +421,7 @@
                   <!-- botones editar y eliminar -->
                   <div class="col-sm-2">
                     <div class="btn-edt">
-                      <a href="#" class="btn btn-edit" data-bs-toggle="modal" data-bs-target="#edtExpCastillo" title="Editar">
+                      <a href="#" class="btn btn-edit" data-bs-toggle="modal" data-bs-target="#editExpCastillo" title="Editar">
                         <i class="fa fa-pen"></i>
                       </a>
                       <a href="#" class="btn btn-eliminar" data-bs-toggle="modal" data-bs-target="#elimExpCastillo" title="Eliminar">
@@ -547,6 +547,48 @@
             </div>
           </div>
           <!--Fin modal eliminar experiencia Castillo--> 
+          <!--inicio modal editar experiencia Castillo-->
+          <div class="modal fade" id="editExpCastillo" tabindex="-1" aria-labelledby="editExpLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="editExpCastilloLabel">Editar experiencia</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <!--form agregar -->
+                  <form>
+                    <div class="form-group">
+                      <div class="mb-1">
+                        <label for="formFile" class="form-label">Logo:</label>
+                        <input class="form-control" type="file" id="formFile">
+                      </div>
+                      <div class="mb-1">
+                        <label for="exampleFormControlInput1" class="form-label">Empresa:</label>
+                        <input class="form-control" type="text" placeholder="" aria-label="">
+                      </div>
+                      <div class="mb-1">
+                        <label for="exampleFormControlInput2" class="form-label">Puesto:</label>
+                        <input class="form-control" type="text" placeholder="" aria-label="">
+                      </div>
+                      <div class="mb-1">
+                        <label for="exampleFormControlInput3" class="form-label">Período:</label>
+                        <input class="form-control" type="text" placeholder="" aria-label="">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Tareas:</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                  </form>
+                </div>
+                <!--pie del modal-->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-dark">Guardar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Fin modal editar experiencia Castillo-->
         </section>
         <!-- Fin experiencia -->
 
