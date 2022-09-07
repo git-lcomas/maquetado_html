@@ -199,21 +199,22 @@ font-family: 'Yellowtail', cursive; */
     padding: 0rem;
 }
 /* == VENTANA MODAL LOGIN =========================================================== */
-.modal-body{
+/* .modal-body{
     z-index: 50000;
-}
+} */
 .modal-content{
     box-shadow: 0 10px 15px #181818;
     
 }
  .modal {
-    /* --bs-modal-zindex: 1055;
-    --bs-modal-width: 500px;
+     /* --bs-modal-zindex: 1055; */
+   /* --bs-modal-width: 500px;
     --bs-modal-padding: 1rem;
     --bs-modal-margin: 0.5rem;
     --bs-modal-color: ; */
     --bs-modal-bg: #fab17a;
 } 
+
 #ayuda-correo {
     font-size: 0.7rem;
 }
