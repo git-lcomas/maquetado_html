@@ -96,10 +96,12 @@ a:link, a:visited, a:active {
 /* == BOTONES ================================== */
 .btn-edit{
     padding: 0rem;
+    /* display:none */
     /* visibility: hidden; */
  }
 .btn-eliminar{
     padding: 0rem;
+    /* display:none */
     /* visibility: hidden; */
  }
  /* solo el boton editar del perfil */
