@@ -9,7 +9,7 @@
     list-style: none;
     padding: .5rem .5rem;
     text-align: center;
-    z-index: 500;
+    z-index: 5000;
   }
 
   .social li:first-child {
@@ -83,7 +83,7 @@
     transition-delay: 0.2s;
 }
 
-    .barra_social:before {
+    .social--hide:before {
         content: '+';
         font: 18px 'Roboto', sans-serif;
         color: #4c4145;
