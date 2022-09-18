@@ -94,8 +94,15 @@ a:link, a:visited, a:active {
     border-color: black;
 }
 /* == BOTONES ================================== */
+.btn-agregar{
+    padding: 0rem;
+    
+    /* display:none */
+    /* visibility: hidden; */
+ }
 .btn-edit{
     padding: 0rem;
+    
     /* display:none */
     /* visibility: hidden; */
  }
