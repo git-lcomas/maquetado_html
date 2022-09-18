@@ -10,8 +10,7 @@
     <link rel="shorcut icon" href="assets/img/camara.svg">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
 
     <script src="https://kit.fontawesome.com/88c51239fc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -267,7 +266,7 @@
                     <div class="col-sm-10">
                       <h4><strong>Sobre mi...</strong></h4>
                     </div>
-                    <!-- botones editar y eliminar id="btn-edt-sobremi"-->
+                    <!-- botones editar y eliminar -->
                     <div class="col-sm-2">
                       <div class="btn-edt" >
                         <a href="#" class="btn btn-edit" data-bs-toggle="modal" data-bs-target="#sobreMiModal" title="Editar 'sobre mi'">
@@ -283,9 +282,9 @@
                   
                   <div class="row">
                     <h5><strong>¡Hola!, me llamo Luis.</strong> Soy de Argentina y nací en la ciudad de Salta en los años 70. Actualmente vivo en la ciudad de Tucumán.</h5>
-                    <h5><ul><li>Me dedico a la programación desde hace muchos años y también al desarrolo web; te ayudaré en la creación de tu sitio, adaptándonos a los requerimientos y estándares actuales para conseguir los resultados que buscas.</li></ul></h5>
-                    <h5><ul><li>Además me dedico a la fotografía profesional, una pasión y mi cable a tierra donde me siento muy a gusto <strong><i>"captando la luz"</i></strong>; y haré realidad la imagen que tienes en tu mente, registrándola en una fotografía. Puedes ver mi trabajo fotográfico acá y contratar mis servicios cuando gustes.</li></ul></h5>
-                    <h5><ul><li>¿Te ha gustado mi historia? Entonces también te gustará descubrir cómo es trabajar conmigo. <strong><i>¿Preparado?...¡vamos!</i></strong></li></ul></h5>
+                    <h5>Me dedico a la programación desde hace muchos años y también al desarrolo web; te ayudaré en la creación de tu sitio, adaptándonos a los requerimientos y estándares actuales para conseguir los resultados que buscas.</h5>
+                    <h5>Además me dedico a la fotografía profesional, una pasión y mi cable a tierra donde me siento muy a gusto <strong><i>"captando la luz"</i></strong>; y haré realidad la imagen que tienes en tu mente, registrándola en una fotografía. Puedes ver mi trabajo fotográfico acá y contratar mis servicios cuando gustes.</h5>
+                    <h5>¿Te ha gustado mi historia? Entonces también te gustará descubrir cómo es trabajar conmigo. <strong><i>¿Preparado?...¡vamos!</i></strong></h5>
                   </div>
                 </div>
                 <!-- fin sobre mi -->
@@ -392,7 +391,7 @@
               <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
                 <!-- boton agregar -->
                 <div class="position-relative">
-                  <a href="#" class="btn btn-edit position-absolute top-50 end-0 translate-middle-y" data-bs-toggle="modal" data-bs-target="#agregarExpModal" title="Agregar experiencia">
+                  <a href="#" class="btn btn-agregar position-absolute top-50 end-0 translate-middle-y" data-bs-toggle="modal" data-bs-target="#agregarExpModal" title="Agregar experiencia">
                     <i class="fa-solid fa-circle-plus fa-lg fa-beat-fade "></i>                  
                   </a>
                 </div>
@@ -401,9 +400,7 @@
             </div>
             
           </div>
-          
           <!-- fin titulo -->
-
           <div class="container" id="experiencia">
             <!-- trabajo castillo -->
             <div class="row align-items-center pt-3">
@@ -479,117 +476,123 @@
             </div>
             <!-- fin trabajo cofaral -->
           </div>
-          <!--inicio modal editar experiencia Castillo-->
-          <div class="modal fade" id="editExpCastillo" tabindex="-1" aria-labelledby="editExpCastilloLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="editExpCastilloLabel">Editar experiencia Castillo</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <!--form agregar -->
-                  <form>
-                    <div class="form-group">
-                      <div class="mb-1">
-                        <label for="formFile" class="form-label">Logo:</label>
-                        <input class="form-control" type="file" id="formFileEditExpCastillo">
-                      </div>
-                      <div class="mb-1">
-                        <label for="exampleFormControlInput1" class="form-label">Empresa:</label>
-                        <input class="form-control" type="text" placeholder="" aria-label="">
-                      </div>
-                      <div class="mb-1">
-                        <label for="exampleFormControlInput2" class="form-label">Puesto:</label>
-                        <input class="form-control" type="text" placeholder="" aria-label="">
-                      </div>
-                      <div class="mb-1">
-                        <label for="exampleFormControlInput3" class="form-label">Período:</label>
-                        <input class="form-control" type="text" placeholder="" aria-label="">
-                      </div>
-                      <div class="mb-3">
-                        <label for="textareaEditExpCastillo" class="form-label">Tareas:</label>
-                        <textarea class="form-control" id="textareaEditExpCastillo" rows="3"></textarea>
-                      </div>
-                  </form>
-                </div>
-                <!--pie del modal-->
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-outline-dark">Guardar</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--Fin modal editar experiencia Castillo-->
+          <!-- ===== MODALES AGREGAR, EDITAR, ELIMINAR -->
           <!--inicio modal agregar experiencia -->
-          <div class="modal fade" id="agregarExpModal" tabindex="-1" aria-labelledby="agregarExpModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="agregarExpModalLabel">Agregar experiencia</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <!--form agregar -->
-                  <form>
-                    <div class="form-group">
-                      <div class="mb-1">
-                        <label for="formFile" class="form-label">Logo:</label>
-                        <input class="form-control" type="file" id="formFileAgregaLogoExp">
-                      </div>
-                      <div class="mb-1">
-                        <label for="exampleFormControlInput1" class="form-label">Empresa:</label>
-                        <input class="form-control" type="text" placeholder="" aria-label="">
-                      </div>
-                      <div class="mb-1">
-                        <label for="exampleFormControlInput2" class="form-label">Puesto:</label>
-                        <input class="form-control" type="text" placeholder="" aria-label="">
-                      </div>
-                      <div class="mb-1">
-                        <label for="exampleFormControlInput3" class="form-label">Período:</label>
-                        <input class="form-control" type="text" placeholder="" aria-label="">
-                      </div>
-                      <div class="mb-3">
-                        <label for="textareaAgregaExp" class="form-label">Tareas:</label>
-                        <textarea class="form-control" id="textareaAgregaExp" rows="3"></textarea>
-                      </div>
-                  </form>
-                </div>
-                <!--pie del modal-->
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-outline-dark">Guardar</button>
+          <div>
+            <div class="modal fade" id="agregarExpModal" tabindex="-1" aria-labelledby="agregarExpModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="agregarExpModalLabel">Agregar experiencia</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <!--form agregar -->
+                    <form>
+                      <div class="form-group">
+                        <div class="mb-1">
+                          <label for="formFile" class="form-label">Logo:</label>
+                          <input class="form-control" type="file" id="formFileAgregaLogoExp">
+                        </div>
+                        <div class="mb-1">
+                          <label for="exampleFormControlInput1" class="form-label">Empresa:</label>
+                          <input class="form-control" type="text" placeholder="" aria-label="">
+                        </div>
+                        <div class="mb-1">
+                          <label for="exampleFormControlInput2" class="form-label">Puesto:</label>
+                          <input class="form-control" type="text" placeholder="" aria-label="">
+                        </div>
+                        <div class="mb-1">
+                          <label for="exampleFormControlInput3" class="form-label">Período:</label>
+                          <input class="form-control" type="text" placeholder="" aria-label="">
+                        </div>
+                        <div class="mb-3">
+                          <label for="textareaAgregaExp" class="form-label">Tareas:</label>
+                          <textarea class="form-control" id="textareaAgregaExp" rows="3"></textarea>
+                        </div>
+                    </form>
+                  </div>
+                  <!--pie del modal-->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark">Guardar</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <!--Fin modal agregar experiencia -->
-          <!--inicio modal eliminar experiencia Castillo -->
-          <div class="modal fade" id="eliminarExpCastillo" tabindex="-1" aria-labelledby="eliminarExpCastilloLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-sm">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="eliminarExpCastilloLabel">Eliminar experiencia Castillo</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <!--form -->
-                  <form>
-                    <div class="form-group">
-                      <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Está seguro de eliminar?</label>
-                      </div>
-                  </form>
-                </div>
-                <!--pie del modal-->
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-outline-dark">Si</button>
-                  <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Salir</button>
+          <!--inicio modal editar experiencia Castillo-->
+          <div>
+            <div class="modal fade" id="editExpCastillo" tabindex="-1" aria-labelledby="editExpCastilloLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="editExpCastilloLabel">Editar experiencia Castillo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <!--form agregar -->
+                    <form>
+                      <div class="form-group">
+                        <div class="mb-1">
+                          <label for="formFile" class="form-label">Logo:</label>
+                          <input class="form-control" type="file" id="formFileEditExpCastillo">
+                        </div>
+                        <div class="mb-1">
+                          <label for="exampleFormControlInput1" class="form-label">Empresa:</label>
+                          <input class="form-control" type="text" placeholder="" aria-label="">
+                        </div>
+                        <div class="mb-1">
+                          <label for="exampleFormControlInput2" class="form-label">Puesto:</label>
+                          <input class="form-control" type="text" placeholder="" aria-label="">
+                        </div>
+                        <div class="mb-1">
+                          <label for="exampleFormControlInput3" class="form-label">Período:</label>
+                          <input class="form-control" type="text" placeholder="" aria-label="">
+                        </div>
+                        <div class="mb-3">
+                          <label for="textareaEditExpCastillo" class="form-label">Tareas:</label>
+                          <textarea class="form-control" id="textareaEditExpCastillo" rows="3"></textarea>
+                        </div>
+                    </form>
+                  </div>
+                  <!--pie del modal-->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark">Guardar</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <!--Fin modal editar experiencia Castillo-->
+          <!--inicio modal eliminar experiencia Castillo -->
+          <div>
+            <div class="modal fade" id="eliminarExpCastillo" tabindex="-1" aria-labelledby="eliminarExpCastilloLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-sm">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="eliminarExpCastilloLabel">Eliminar experiencia Castillo</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <!--form -->
+                      <form>
+                        <div class="form-group">
+                          <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Está seguro de eliminar?</label>
+                          </div>
+                      </form>
+                    </div>
+                    <!--pie del modal-->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-outline-dark">Si</button>
+                      <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Salir</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           <!--Fin modal eliminar experiencia Castillo--> 
-          
         </section>
         <!-- Fin experiencia -->
 
@@ -606,7 +609,7 @@
               <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
                 <!-- boton agregar -->
                 <div class="position-relative">
-                  <a href="#" class="btn btn-edit position-absolute top-50 end-0 translate-middle-y" data-bs-toggle="modal" data-bs-target="#agregarEdu" title="Agregar educación">
+                  <a href="#" class="btn btn-agregar position-absolute top-50 end-0 translate-middle-y" data-bs-toggle="modal" data-bs-target="#agregarEdu" title="Agregar educación">
                     <i class="fa-solid fa-circle-plus fa-lg fa-beat-fade "></i>                  
                   </a>
                 </div>
@@ -735,38 +738,40 @@
             <!-- fin educacion curso full stack -->
           </div>
           <!--inicio modal agregar educación -->
-          <div class="modal fade" id="agregarEdu" tabindex="-1" aria-labelledby="agregarEduLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="agregarEduLabel">Agregar educación</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <!--form agregar -->
-                  <form>
-                    <div class="form-group">
-                      <div class="mb-1">
-                        <label for="formFile" class="form-label">Logo:</label>
-                        <input class="form-control" type="file" id="formFileAgregaEdu">
-                      </div>
-                      <div class="mb-1">
-                        <label for="exampleFormControlInput1" class="form-label">Institución:</label>
-                        <input class="form-control" type="text" placeholder="" aria-label="">
-                      </div>
-                      <div class="mb-1">
-                        <label for="exampleFormControlInput2" class="form-label">Carrera/título:</label>
-                        <input class="form-control" type="text" placeholder="" aria-label="">
-                      </div>
-                      <div class="mb-1">
-                        <label for="exampleFormControlInput3" class="form-label">Período:</label>
-                        <input class="form-control" type="text" placeholder="" aria-label="">
-                      </div>
-                  </form>
-                </div>
-                <!--pie del modal-->
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-outline-dark">Guardar</button>
+          <div>
+            <div class="modal fade" id="agregarEdu" tabindex="-1" aria-labelledby="agregarEduLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="agregarEduLabel">Agregar educación</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <!--form agregar -->
+                    <form>
+                      <div class="form-group">
+                        <div class="mb-1">
+                          <label for="formFile" class="form-label">Logo:</label>
+                          <input class="form-control" type="file" id="formFileAgregaEdu">
+                        </div>
+                        <div class="mb-1">
+                          <label for="exampleFormControlInput1" class="form-label">Institución:</label>
+                          <input class="form-control" type="text" placeholder="" aria-label="">
+                        </div>
+                        <div class="mb-1">
+                          <label for="exampleFormControlInput2" class="form-label">Carrera/título:</label>
+                          <input class="form-control" type="text" placeholder="" aria-label="">
+                        </div>
+                        <div class="mb-1">
+                          <label for="exampleFormControlInput3" class="form-label">Período:</label>
+                          <input class="form-control" type="text" placeholder="" aria-label="">
+                        </div>
+                    </form>
+                  </div>
+                  <!--pie del modal-->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark">Guardar</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -788,7 +793,7 @@
               <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
                 <!-- boton agregar -->
                 <div class="position-relative">
-                  <a href="#" class="btn btn-edit position-absolute top-50 end-0 translate-middle-y"  data-bs-toggle="modal" data-bs-target="#agregarSkill" title="Agregar skill">
+                  <a href="#" class="btn btn-agregar position-absolute top-50 end-0 translate-middle-y"  data-bs-toggle="modal" data-bs-target="#agregarSkill" title="Agregar skill">
                     <i class="fa-solid fa-circle-plus fa-lg fa-beat-fade "></i>                  
                   </a>
                 </div>
@@ -1080,7 +1085,7 @@
               <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
                 <!-- boton agregar -->
                 <div class="position-relative">
-                  <a href="#" class="btn btn-edit position-absolute top-50 end-0 translate-middle-y" data-bs-toggle="modal" data-bs-target="#agregarProy" title="Agregar proyecto">
+                  <a href="#" class="btn btn-agregar position-absolute top-50 end-0 translate-middle-y" data-bs-toggle="modal" data-bs-target="#agregarProy" title="Agregar proyecto">
                     <i class="fa-solid fa-circle-plus fa-lg fa-beat-fade "></i>                  
                   </a>
                 </div>
@@ -1170,6 +1175,7 @@
       <p>&copy Copyright Luis A. Comas - 2022</p>
     </div>
   </footer>
+    <!--fin portfolio-->
   <!--inicio modal edicion foto perfil -->
   <div class="modal fade" id="perfilModal" tabindex="-1" aria-labelledby="perfilModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -1196,10 +1202,11 @@
     </div>
   </div>
   <!--Fin modal edicion foto perfil-->
-  <!--fin portfolio-->
 
-    <!-- JavaScript Bundle with Popper -->
+
+  <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
 
   
   <script type="text/javascript">
