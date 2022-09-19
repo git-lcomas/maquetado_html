@@ -147,8 +147,8 @@
                 <!--Fin Modal login-->
               </div>
             </nav>
-            <!-- inicio banner -->
-            <div class="row">
+            <!-- inicio banner 1-->
+            <!-- <div class="row">
               <div class="col-12">
                 <div class="banner">
                   <img class="banner1 d-block w-100" src="assets/img/banner.png"  alt="banner" title="Banner" margin-top="100px">
@@ -161,7 +161,49 @@
                   </div>
                 </div>
               </div>
+            </div> -->
+            <!-- Fin banner 1-->
+            <!-- inicio banner 2 -->
+            <div class="row">
+              <div class="col-12">
+                <div id="carouselFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                  <div class="carousel-inner banner">
+                    <div class="carousel-item active">
+                      <img src="assets/img/banner.png" class="banner1 d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Fotógafo profesional.</h5>
+                        <p>"Si sabes esperar, la gente se olvidará de tu cámara y su alma saldrá a la luz."
+                          -- Steve McCurry.</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/banner2.png" class="banner1 d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Programador Full Stack Jr.</h5>
+                        <p>"El buen código es su mejor documentación"
+                          -- Steve McConnel.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="position-relative">
+                    <div class="btn-edit">
+                      <a href="#" class="btn position-absolute top-0 end-0" data-bs-toggle="modal" data-bs-target="#bannerModal" title="Editar banner">
+                        <i class="fa fa-pen"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselFade" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselFade" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
             </div>
+            <!-- Fin banner 2 -->
             <!--inicio modal edicion banner -->
             <div class="modal fade" id="bannerModal" tabindex="-1" aria-labelledby="bannerModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
@@ -175,7 +217,11 @@
                     <form>
                       <div class="form-group">
                         <div class="mb-3">
-                          <label for="formFile" class="form-label">Seleccionar:</label>
+                          <label for="formFile" class="form-label">Seleccionar banner 1:</label>
+                          <input class="form-control" type="file" id="formFileAgregaBanner">
+                        </div>
+                        <div class="mb-3">
+                          <label for="formFile" class="form-label">Seleccionar banner 2:</label>
                           <input class="form-control" type="file" id="formFileAgregaBanner">
                         </div>
                     </form>
@@ -214,7 +260,7 @@
                 <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 text-center">
                   <div id="info-data">
                     <h1>Luis Comas</h1>
-                    <div class="btn-edt">
+                    <div class="btn-edt-titulo">
                       <a href="#" class="btn btn-edit" data-bs-toggle="modal" data-bs-target="#titulosModal" title="Editar titulos">
                         <i class="fa fa-pen"></i>
                       </a>
@@ -226,26 +272,40 @@
                     <div id="titulo3">Fotógrafo profesional</div>
                     <div id="info-contacto">
                       <span>Tucumán (Argentina)</span>
-                      <div class="contacto">
-                        <span><a href="#" data-bs-toggle="modal" data-bs-target="#contactoModal">Contacto</a></span>
-                      </div>
-                      <div>
-                        <button type="button" class="btn btn-sm btn-outline-dark" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-title="Contacto" data-bs-content="Llamame: 3815850547">Contacto</button>
+                      <div class="pt-3">
+                        <button type="button" class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#contactoModal">Contacto</button>
                       </div>
                       
                       <!--Inicio Modal Contacto-->
                       <div class="modal fade" id="contactoModal" tabindex="-1" aria-labelledby="contactoModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
                           <div class="modal-content">
-                            <div class="row">
-                              <div class="col-3">
-                                <img class="foto-contacto" src="assets/img/luis2-bn.jpg" alt="Foto contacto" title="Contacto" >
-                              </div>
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="contactoModalLabel">Contacto</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <div class="row">
-                              <div class="col-12">
-                                <img class="tarjeta-contacto" src="assets/img/contacto.png" alt="Contacto" title="Contacto" >
-                              </div>
+                            <div class="modal-body">
+                              <form>
+                                <div class="form-group text-start">
+                                  <div class="mb-3">
+                                    <label for="FormControlInput1" class="form-label">Su nombre:</label>
+                                    <input class="form-control" type="text" placeholder="" aria-label="">
+                                  </div>
+                                  <div class="mb-3">
+                                    <label for="FormControlInput2" class="form-label">Correo electrónico:</label>
+                                    <input type="email" class="form-control" id="FormControlInput1" placeholder="nombre@ejemplo.com">
+                                  </div>
+                                  <div class="mb-3">
+                                    <label for="FormControlTextarea1" class="form-label">Comentarios:</label>
+                                    <textarea class="form-control" id="FormControlTextarea1" rows="3"></textarea>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                              
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              <button type="button" class="btn btn-primary">Enviar</button>
                             </div>
                           </div>
                         </div>
@@ -304,6 +364,7 @@
                               <label for="textareaSobreMi" class="form-label">Ingrese información resumida sobre usted:</label>
                               <textarea class="form-control" id="textareaSobreMi" rows="3"></textarea>
                             </div>
+                          </div>
                         </form>
                       </div>
                       <!--pie del modal-->
@@ -325,17 +386,18 @@
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                      <!--form seleccionar foto -->
+                      <!--form titulos -->
                       <form>
                         <div class="form-group">
                           <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Su nombre:</label>
+                            <label for="FormControlInput1" class="form-label">Su nombre:</label>
                             <input class="form-control" type="text" placeholder="" aria-label="">
                           </div>
                           <div class="mb-3">
                             <label for="textareaInfoProf" class="form-label">Ingrese información profesional:</label>
                             <textarea class="form-control" id="textareaInfoProf" rows="3"></textarea>
                           </div>
+                        </div>
                       </form>
                     </div>
                     <!--pie del modal-->
@@ -360,7 +422,7 @@
                     <form>
                       <div class="form-group">
                         <div class="mb-3">
-                          <label for="exampleFormControlInput1" class="form-label">Está seguro de eliminar?</label>
+                          <label for="FormControlInput1" class="form-label">Está seguro de eliminar?</label>
                         </div>
                     </form>
                   </div>
@@ -495,15 +557,15 @@
                           <input class="form-control" type="file" id="formFileAgregaLogoExp">
                         </div>
                         <div class="mb-1">
-                          <label for="exampleFormControlInput1" class="form-label">Empresa:</label>
+                          <label for="FormControlInput1" class="form-label">Empresa:</label>
                           <input class="form-control" type="text" placeholder="" aria-label="">
                         </div>
                         <div class="mb-1">
-                          <label for="exampleFormControlInput2" class="form-label">Puesto:</label>
+                          <label for="FormControlInput2" class="form-label">Puesto:</label>
                           <input class="form-control" type="text" placeholder="" aria-label="">
                         </div>
                         <div class="mb-1">
-                          <label for="exampleFormControlInput3" class="form-label">Período:</label>
+                          <label for="FormControlInput3" class="form-label">Período:</label>
                           <input class="form-control" type="text" placeholder="" aria-label="">
                         </div>
                         <div class="mb-3">
@@ -539,15 +601,15 @@
                           <input class="form-control" type="file" id="formFileEditExpCastillo">
                         </div>
                         <div class="mb-1">
-                          <label for="exampleFormControlInput1" class="form-label">Empresa:</label>
+                          <label for="FormControlInput1" class="form-label">Empresa:</label>
                           <input class="form-control" type="text" placeholder="" aria-label="">
                         </div>
                         <div class="mb-1">
-                          <label for="exampleFormControlInput2" class="form-label">Puesto:</label>
+                          <label for="FormControlInput2" class="form-label">Puesto:</label>
                           <input class="form-control" type="text" placeholder="" aria-label="">
                         </div>
                         <div class="mb-1">
-                          <label for="exampleFormControlInput3" class="form-label">Período:</label>
+                          <label for="FormControlInput3" class="form-label">Período:</label>
                           <input class="form-control" type="text" placeholder="" aria-label="">
                         </div>
                         <div class="mb-3">
@@ -571,7 +633,7 @@
                 <div class="modal-dialog modal-dialog-centered modal-sm">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="eliminarExpCastilloLabel">Eliminar experiencia Castillo</h5>
+                      <h5 class="modal-title" id="eliminarExpCastilloLabel">Eliminar experiencia</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -579,7 +641,7 @@
                       <form>
                         <div class="form-group">
                           <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Está seguro de eliminar?</label>
+                            <label for="FormControlInput1" class="form-label">Está seguro de eliminar?</label>
                           </div>
                       </form>
                     </div>
@@ -633,10 +695,10 @@
                   <!-- botones editar y eliminar -->
                   <div class="col-sm-2">
                     <div class="btn-edt">
-                      <a href="#" class="btn btn-edit" title="Editar">
+                      <a href="#" class="btn btn-edit" data-bs-toggle="modal" data-bs-target="#editEduProgUni" title="Editar">
                         <i class="fa fa-pen"></i>
                       </a>
-                      <a href="#" class="btn btn-eliminar" title="Eliminar">
+                      <a href="#" class="btn btn-eliminar" data-bs-toggle="modal" data-bs-target="#elimEduProgUni" title="Editar">
                         <i class="fa fa-trash"></i>
                       </a>
                     </div>
@@ -755,15 +817,15 @@
                           <input class="form-control" type="file" id="formFileAgregaEdu">
                         </div>
                         <div class="mb-1">
-                          <label for="exampleFormControlInput1" class="form-label">Institución:</label>
+                          <label for="FormControlInput1" class="form-label">Institución:</label>
                           <input class="form-control" type="text" placeholder="" aria-label="">
                         </div>
                         <div class="mb-1">
-                          <label for="exampleFormControlInput2" class="form-label">Carrera/título:</label>
+                          <label for="FormControlInput2" class="form-label">Carrera/título:</label>
                           <input class="form-control" type="text" placeholder="" aria-label="">
                         </div>
                         <div class="mb-1">
-                          <label for="exampleFormControlInput3" class="form-label">Período:</label>
+                          <label for="FormControlInput3" class="form-label">Período:</label>
                           <input class="form-control" type="text" placeholder="" aria-label="">
                         </div>
                     </form>
@@ -777,6 +839,74 @@
             </div>
           </div>
           <!--Fin modal agregar educación -->
+          <!--inicio modal editar edu prog uni-->
+          <div>
+            <div class="modal fade" id="editEduProgUni" tabindex="-1" aria-labelledby="editEduProgUniLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="editEduProgUniLabel">Editar educación Prog. Uni.</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <!--form editar -->
+                    <form>
+                      <div class="form-group">
+                        <div class="mb-1">
+                          <label for="formFile" class="form-label">Logo:</label>
+                          <input class="form-control" type="file" id="formFileeditEduProgUni">
+                        </div>
+                        <div class="mb-1">
+                          <label for="FormControlInput1" class="form-label">Insitución:</label>
+                          <input class="form-control" type="text" placeholder="" aria-label="">
+                        </div>
+                        <div class="mb-1">
+                          <label for="FormControlInput2" class="form-label">Carrera:</label>
+                          <input class="form-control" type="text" placeholder="" aria-label="">
+                        </div>
+                        <div class="mb-1">
+                          <label for="FormControlInput3" class="form-label">Período:</label>
+                          <input class="form-control" type="text" placeholder="" aria-label="">
+                        </div>
+                    </form>
+                  </div>
+                  <!--pie del modal-->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark">Guardar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Fin modal editar edu prog uni-->
+          <!--inicio modal eliminar edu prog uni -->
+          <div>
+            <div class="modal fade" id="elimEduProgUni" tabindex="-1" aria-labelledby="elimEduProgUniLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-sm">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="elimEduProgUniLabel">Eliminar carrera</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <!--form -->
+                      <form>
+                        <div class="form-group">
+                          <div class="mb-3">
+                            <label for="FormControlInput1" class="form-label">Está seguro de eliminar?</label>
+                          </div>
+                      </form>
+                    </div>
+                    <!--pie del modal-->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-outline-dark">Si</button>
+                      <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Salir</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!-- Fin modal eliminar edu prog uni --> 
         </section>
         <!-- Fin educación -->
         
@@ -819,10 +949,10 @@
                   <!-- botones editar y eliminar -->
                   <div class="col-sm-2">
                     <div class="btn-edt">
-                      <a href="#" class="btn btn-edit" title="Editar">
+                      <a href="#" class="btn btn-edit" data-bs-toggle="modal" data-bs-target="#editSkillPhotoshop" title="Editar">
                         <i class="fa fa-pen"></i>
                       </a>
-                      <a href="#" class="btn btn-eliminar" title="Eliminar">
+                      <a href="#" class="btn btn-eliminar" data-bs-toggle="modal" data-bs-target="#eliminarSkillPhotoshop" title="Eliminar">
                         <i class="fa fa-trash"></i>
                       </a>
                     </div>
@@ -1035,40 +1165,106 @@
             </div>
             <!-- Fin skill Bootstrap -->
           </div>
-          <!--inicio modal agregar skill -->
-          <div class="modal fade" id="agregarSkill" tabindex="-1" aria-labelledby="agregarSkillLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="agregarSkillLabel">Agregar skill</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <!--form agregar -->
-                  <form>
-                    <div class="form-group">
-                      <div class="mb-1">
-                        <label for="formFile" class="form-label">Logo:</label>
-                        <input class="form-control" type="file" id="formFileAgregaSkill">
-                      </div>
-                      <div class="mb-1">
-                        <label for="exampleFormControlInput1" class="form-label">Nombre:</label>
-                        <input class="form-control" type="text" placeholder="" aria-label="">
-                      </div>
-                      <div class="mb-1">
-                        <label for="exampleFormControlInput2" class="form-label">Progreso:</label>
-                        <input class="form-control" type="text" placeholder="" aria-label="">
-                      </div>
-                  </form>
-                </div>
-                <!--pie del modal-->
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-outline-dark">Guardar</button>
+          <!-- inicio modal agregar skill -->
+          <div>
+            <div class="modal fade" id="agregarSkill" tabindex="-1" aria-labelledby="agregarSkillLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="agregarSkillLabel">Agregar skill</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <!--form agregar -->
+                    <form>
+                      <div class="form-group">
+                        <div class="mb-1">
+                          <label for="formFile" class="form-label">Logo:</label>
+                          <input class="form-control" type="file" id="formFileAgregaSkill">
+                        </div>
+                        <div class="mb-1">
+                          <label for="FormControlInput1" class="form-label">Nombre:</label>
+                          <input class="form-control" type="text" placeholder="" aria-label="">
+                        </div>
+                        <div class="mb-1">
+                          <label for="FormControlInput2" class="form-label">Progreso:</label>
+                          <input class="form-control" type="text" placeholder="" aria-label="">
+                        </div>
+                    </form>
+                  </div>
+                  <!--pie del modal-->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark">Guardar</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <!--Fin modal agregar skill -->  
+          <!-- Fin modal agregar skill -->  
+          <!-- inicio modal editar skill Photoshop -->
+          <div>
+            <div class="modal fade" id="editSkillPhotoshop" tabindex="-1" aria-labelledby="editSkillPhotoshopLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="editSkillPhotoshopLabel">Editar Skill Photoshop</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <!--form agregar -->
+                    <form>
+                      <div class="form-group">
+                        <div class="mb-1">
+                          <label for="formFile" class="form-label">Logo:</label>
+                          <input class="form-control" type="file" id="formFileeditSkillPhotoshop">
+                        </div>
+                        <div class="mb-1">
+                          <label for="FormControlInput1" class="form-label">Nombre:</label>
+                          <input class="form-control" type="text" placeholder="" aria-label="">
+                        </div>
+                        <div class="mb-1">
+                          <label for="FormControlInput2" class="form-label">Progreso:</label>
+                          <input class="form-control" type="text" placeholder="%" aria-label="">
+                        </div>
+                    </form>
+                  </div>
+                  <!--pie del modal-->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark">Guardar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Fin modal editar skill Photoshop -->
+          <!-- inicio modal eliminar skill Photoshop -->
+          <div>
+            <div class="modal fade" id="eliminarSkillPhotoshop" tabindex="-1" aria-labelledby="eliminarSkillPhotoshopLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-sm">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="eliminarSkillPhotoshopLabel">Eliminar skill</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <!--form -->
+                      <form>
+                        <div class="form-group">
+                          <div class="mb-3">
+                            <label for="FormControlInput1" class="form-label">Está seguro de eliminar?</label>
+                          </div>
+                      </form>
+                    </div>
+                    <!--pie del modal-->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-outline-dark">Si</button>
+                      <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Salir</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!-- Fin modal eliminar skill Photoshop --> 
         </section>
         <!-- Fin Skills -->
         
@@ -1111,10 +1307,10 @@
                   <!-- botones editar y eliminar -->
                   <div class="col-sm-2">
                     <div class="btn-edt">
-                      <a href="#" class="btn btn-edit" title="Editar">
+                      <a href="#" class="btn btn-edit" data-bs-toggle="modal" data-bs-target="#editProyPortfolio" title="Editar">
                         <i class="fa fa-pen"></i>
                       </a>
-                      <a href="#" class="btn btn-eliminar" title="Eliminar">
+                      <a href="#" class="btn btn-eliminar" data-bs-toggle="modal" data-bs-target="#elimProyPortfolio" title="Eliminar">
                         <i class="fa fa-trash"></i>
                       </a>
                     </div>
@@ -1129,43 +1325,113 @@
             <!-- fin proyecto portfolio -->
           </div>
           <!--inicio modal agregar proyecto -->
-          <div class="modal fade" id="agregarProy" tabindex="-1" aria-labelledby="agregarProyLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="agregarProyLabel">Agregar proyecto</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <!--form agregar -->
-                  <form>
-                    <div class="form-group">
-                      <div class="mb-1">
-                        <label for="formFile" class="form-label">Logo:</label>
-                        <input class="form-control" type="file" id="formFileAgregaLogoProy">
-                      </div>
-                      <div class="mb-1">
-                        <label for="exampleFormControlInput1" class="form-label">Nombre:</label>
-                        <input class="form-control" type="text" placeholder="" aria-label="">
-                      </div>
-                      <div class="mb-1">
-                        <label for="exampleFormControlInput2" class="form-label">Descripción:</label>
-                        <input class="form-control" type="text" placeholder="" aria-label="">
-                      </div>
-                      <div class="mb-1">
-                        <label for="exampleFormControlInput2" class="form-label">Período:</label>
-                        <input class="form-control" type="text" placeholder="" aria-label="">
-                      </div>
-                  </form>
-                </div>
-                <!--pie del modal-->
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-outline-dark">Guardar</button>
+          <div>
+            <div class="modal fade" id="agregarProy" tabindex="-1" aria-labelledby="agregarProyLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="agregarProyLabel">Agregar proyecto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <!--form agregar -->
+                    <form>
+                      <div class="form-group">
+                        <div class="mb-1">
+                          <label for="formFile" class="form-label">Logo:</label>
+                          <input class="form-control" type="file" id="formFileAgregaLogoProy">
+                        </div>
+                        <div class="mb-1">
+                          <label for="FormControlInput1" class="form-label">Nombre:</label>
+                          <input class="form-control" type="text" placeholder="" aria-label="">
+                        </div>
+                        <div class="mb-1">
+                          <label for="FormControlInput2" class="form-label">Descripción:</label>
+                          <input class="form-control" type="text" placeholder="" aria-label="">
+                        </div>
+                        <div class="mb-1">
+                          <label for="FormControlInput2" class="form-label">Período:</label>
+                          <input class="form-control" type="text" placeholder="" aria-label="">
+                        </div>
+                    </form>
+                  </div>
+                  <!--pie del modal-->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark">Guardar</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <!--Fin modal agregar proyecto --> 
+          <!-- inicio modal editar proyecto Portfolio -->
+          <div>
+            <div class="modal fade" id="editProyPortfolio" tabindex="-1" aria-labelledby="editProyPortfolioLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="editProyPortfolioLabel">Editar proyecto Portfolio</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <!--form agregar -->
+                    <form>
+                      <div class="form-group">
+                        <div class="mb-1">
+                          <label for="formFile" class="form-label">Logo:</label>
+                          <input class="form-control" type="file" id="formFileEditLogoProy">
+                        </div>
+                        <div class="mb-1">
+                          <label for="FormControlInput1" class="form-label">Nombre:</label>
+                          <input class="form-control" type="text" placeholder="" aria-label="">
+                        </div>
+                        <div class="mb-1">
+                          <label for="FormControlInput2" class="form-label">Descripción:</label>
+                          <input class="form-control" type="text" placeholder="" aria-label="">
+                        </div>
+                        <div class="mb-1">
+                          <label for="FormControlInput2" class="form-label">Período:</label>
+                          <input class="form-control" type="text" placeholder="" aria-label="">
+                        </div>
+                    </form>
+                  </div>
+                  <!--pie del modal-->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark">Guardar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Fin modal editar proyecto Portfolio -->
+          <!-- inicio modal eliminar proyecto Portfolio -->
+          <div>
+            <div class="modal fade" id="elimProyPortfolio" tabindex="-1" aria-labelledby="elimProyPortfolioLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-sm">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="elimProyPortfolioLabel">Eliminar proyecto</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <!--form -->
+                      <form>
+                        <div class="form-group">
+                          <div class="mb-3">
+                            <label for="FormControlInput1" class="form-label">Está seguro de eliminar?</label>
+                          </div>
+                      </form>
+                    </div>
+                    <!--pie del modal-->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-outline-dark">Si</button>
+                      <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Salir</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!-- Fin modal eliminar proyecto Portfolio --> 
         </section>
       </div>
     </div>
