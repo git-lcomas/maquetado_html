@@ -5,3 +5,5 @@ hola
 08/08/2022 cambio de prueba dentro del repo desarrollo
 10/8 subo desde repo local en domicilio
 # maquetado_html
+20/9 Fin maqueta
+20/9 Empieza Angular
